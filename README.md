@@ -1,3 +1,9 @@
+## quick install
+
+git clone git@github.com:dilipen/book-track.git
+cd book-track
+pip install -r requirements.txt
+
 ## create users
 
 
