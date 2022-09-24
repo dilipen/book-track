@@ -1,6 +1,5 @@
 import os
 import environ
-import django_heroku
 
 USE_X_FORWARDED_HOST = True
 
@@ -164,5 +163,3 @@ LOGIN_URL = '/api-auth/login/'
 LOGOUT_URL = '/logout/'
 
 LOGIN_REDIRECT_URL = '/'
-
-django_heroku.settings(locals())
