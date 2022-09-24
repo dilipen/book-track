@@ -6,6 +6,8 @@ cd book-track
 
 pip install -r requirements.txt
 
+## db desing
+![db desing](Flowcharts.jpeg)
 
 ## create users
 
