@@ -9,6 +9,10 @@ pip install -r requirements.txt
 ## db desing
 ![db desing](Flowcharts.jpeg)
 
+## output
+![output](output.png)
+
+
 ## create users
 
 
