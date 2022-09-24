@@ -1,0 +1,15 @@
+{
+    "python.pythonPath": "venv/bin/python3",
+    "python.linting.enabled": true,
+    "python.linting.flake8Path": "flake8",
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=E203,E266,E501,W503,F403,F401",
+        "--max-line-length=79",
+        "--max-complexity=18",
+        "--select=B,C,E,F,W,T4,B9",
+        "--exclude=myapp/migrations,devapp,venv"
+    ],
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "yapf"
+}

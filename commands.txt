@@ -1,0 +1,28 @@
+python .\manage.py create_view "myapp" "publisher_book" "PublisherBook"  "/publisher/books/[Book:id]{book}"
+python .\manage.py create_view "myapp" "publisher_paper_book_order" "PublisherPaperBookOrder"  "/publisher/paper-book-orders/[PaperBookOrder:id]{paper_book_order}"
+python .\manage.py create_view "myapp" "publisher_paper_book_order_track" "PublisherPaperBookOrderTrack"  "/publisher/paper-book-orders/[PaperBookOrder:id]{paper_book_order}/paper-book-order-tracks/[PaperBookOrderTrack:id]{paper_book_order_track}"
+
+
+python .\manage.py create_view "myapp" "buyer_cart" "BuyerCart"  "/buyer/carts/[Cart:id]{cart}"
+python .\manage.py create_view "myapp" "buyer_order" "BuyerOrder"  "/buyer/orders/[Order:id]{order}"
+python .\manage.py create_view "myapp" "buyer_order_detail" "BuyerOrderDetail"  "/buyer/orders/[Order:id]{order}/order-details/[OrderDetail:id]{order_detail}"
+python .\manage.py create_view "myapp" "buyer_user_address" "BuyerUserAddress"  "/buyer/user_address/[UserAddress:id]{user_address}"
+
+python .\manage.py create_view "myapp" "buyer_show_book" "BuyerShowBook"  "/buyer/show-books/[Book:id]{book}"
+
+python .\manage.py create_view "myapp" "transporter_paper_book_order" "TransporterPaperBookOrder"  "/transporter/paper_book_orders/[PaperBookOrder:id]{paper_book_order}"
+python .\manage.py create_view "myapp" "transporter_paper_book_order_track" "TransporterPaperBookOrderTrack"  "/transporter/paper_book_orders/[PaperBookOrder:id]{paper_book_order}/paper_book_order_tracks/[PaperBookOrderTrack:id]{paper_book_order_track}"
+
+============
+
+python .\manage.py create_buyer "buyer1" "buyer1@mail.com" "buyer1" "address_line1" "address_line2" "address_line3"
+python .\manage.py create_buyer "buyer2" "buyer2@mail.com" "buyer2" "address_line1" "address_line2" "address_line3"
+python .\manage.py create_buyer "buyer3" "buyer3@mail.com" "buyer3" "address_line1" "address_line2" "address_line3"
+
+python .\manage.py create_publisher "pub1" "pub1@mail.com" "pub1" 
+python .\manage.py create_publisher "pub2" "pub2@mail.com" "pub2" 
+python .\manage.py create_publisher "pub3" "pub3@mail.com" "pub3" 
+
+python .\manage.py create_transporter "tran1" "tran1@mail.com" "tran1" 
+python .\manage.py create_transporter "tran2" "tran2@mail.com" "tran2" 
+python .\manage.py create_transporter "tran3" "tran3@mail.com" "tran3" 
