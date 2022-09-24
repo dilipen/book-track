@@ -13,6 +13,8 @@ python .\manage.py create_publisher "pub1" "pub1@mail.com" "pub1"
 python .\manage.py create_publisher "pub2" "pub2@mail.com" "pub2" 
 
 python .\manage.py create_publisher "pub3" "pub3@mail.com" "pub3" 
+
+
 python .\manage.py create_transporter "tran1" "tran1@mail.com" "tran1" 
 
 python .\manage.py create_transporter "tran2" "tran2@mail.com" "tran2" 
