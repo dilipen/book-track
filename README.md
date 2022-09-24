@@ -6,6 +6,24 @@ cd book-track
 
 pip install -r requirements.txt
 
+
+## credentials
+
+### for buyer
+buyer1@mail.com / buyer1
+buyer2@mail.com / buyer1
+buyer3@mail.com / buyer3
+
+### for publisher
+pub1@mail.com / pub1
+pub2@mail.com / pub2
+pub3@mail.com / pub3
+
+### for transporter
+tran1@mail.com / tran1
+tran2@mail.com / tran2
+tran3@mail.com / tran3
+
 ## db desing
 ![db desing](Flowcharts.jpeg)
 
