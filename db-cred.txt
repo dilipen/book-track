@@ -1,0 +1,5 @@
+Host: ec2-44-195-100-240.compute-1.amazonaws.com
+Database: d5e3ahbfm8iufp
+User: hqkhuwwzktaate
+Port: 5432
+Password: 8f6b04e62b22d6c3376bf12deec1ca9930d82ef8602d741d34a2c34e3a942fe5

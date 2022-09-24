@@ -8,16 +8,16 @@ env = environ.Env(
     # set casting, default value
     DEBUG=(bool, False),
     SECRET_KEY=(str, 'y@nf8j_c#@7+zc)r_6whsj&4(2%$2h3i2r2t%j!ammj7fe$fyo'),
-    # POSTGRES_DB=(str, 'labour_exchange_project'),
-    # POSTGRES_USER=(str, 'postgres'),
-    # POSTGRES_PASSWORD=(str, '123'),
-    # POSTGRES_HOST=(str, 'localhost'),
-    # POSTGRES_SERVICE_PORT=(str, '5432')
+    POSTGRES_DB=(str, 'd5e3ahbfm8iufp'),
+    POSTGRES_USER=(str, 'hqkhuwwzktaate'),
+    POSTGRES_PASSWORD=(str, '8f6b04e62b22d6c3376bf12deec1ca9930d82ef8602d741d34a2c34e3a942fe5'),
+    POSTGRES_HOST=(str, 'ec2-44-195-100-240.compute-1.amazonaws.com'),
+    POSTGRES_SERVICE_PORT=(str, '5432')
 )
 # reading .env file
 environ.Env.read_env()
 
-BASE_URL = os.getenv('BASE_URL', 'http://localhost:8000/')
+BASE_URL = os.getenv('BASE_URL', 'https://book-track-dilipen.herokuapp.com/')
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -76,10 +76,21 @@ TEMPLATES = [
 WSGI_APPLICATION = 'restapi.wsgi.application'
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': '%s/db.sqlite3' % BASE_DIR,
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '%s/db.sqlite3' % BASE_DIR,
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': env('POSTGRES_DB'),
+        'USER': env('POSTGRES_USER'),
+        'PASSWORD': env('POSTGRES_PASSWORD'),
+        'HOST': env('POSTGRES_HOST'),
+        'PORT': env('POSTGRES_SERVICE_PORT'),
     }
 }
 
